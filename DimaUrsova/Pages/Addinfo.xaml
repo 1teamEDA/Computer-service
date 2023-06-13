@@ -1,0 +1,90 @@
+﻿<Page x:Class="DimaUrsova.Pages.Addinfo"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DimaUrsova.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Addinfo" Loaded="Page_Loaded">
+
+<Grid>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition/>
+        <ColumnDefinition Width="5*"/>
+        <ColumnDefinition/>
+</Grid.ColumnDefinitions>
+<StackPanel Grid.Column="2" Background="#030303">
+    <Button x:Name="editDetailsBtn" Click="editDetailsBtn_Click" Content="Додати деталі"/>
+   </StackPanel>
+<ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Hidden">
+
+    <StackPanel>
+        
+
+     
+        
+        
+        <StackPanel Orientation="Vertical" Margin="20,20,20,0">
+            <TextBlock Text="Піб заказника" Foreground="White" Margin="0,0,0,0"></TextBlock>
+            <TextBox Name="TextBox1" Margin="0,0,0,25"></TextBox>
+
+            <TextBlock Text="Номер заказника" Foreground="White"></TextBlock>
+            <TextBox Name="TextBox2" Margin="0,0,0,25"></TextBox>
+
+            <TextBlock Text="Адреса замовника" Foreground="White"></TextBlock>
+            <TextBox Name="TextBox3" Margin="0,0,0,25"></TextBox>
+
+            <TextBlock Text="Документ заказника" Foreground="White"></TextBlock>
+            <TextBox Name="TextBox4" Margin="0,0,0,25"></TextBox>
+            
+        </StackPanel >
+
+        <StackPanel Orientation="Vertical" Grid.Column="1"  Margin="20,20,20,0">
+            <TextBlock Text="Назва приладу" Foreground="White" Margin="0,0,0,0"></TextBlock>
+            <TextBox Name="Textboxeorders1" Margin="0,0,0,5"></TextBox>
+            
+            <TextBlock Text="Причина звертання" Foreground="White" Margin="0,0,0,0"></TextBlock>
+            <TextBox Name="Textboxeorders2" Margin="0,0,0,5"></TextBox>
+            
+            <TextBlock Text="Зовнішний вигляд" Foreground="White" Margin="0,0,0,0"></TextBlock>
+            <TextBox Name="Textboxeorders3" Margin="0,0,0,5"></TextBox>
+            
+            <TextBlock Text="Дата замовлення" Foreground="White" Margin="0,0,0,0"></TextBlock>
+            <TextBox Name="Textboxeorders4" Margin="0,0,0,5"></TextBox>
+            
+                        
+            <TextBlock Text="Статус" Foreground="White" Margin="0,0,0,0"></TextBlock>
+
+                    <ComboBox x:Name="Combox1" Margin="0,0,0,5">
+                        <ComboBoxItem> dfjsdfk</ComboBoxItem>
+                        <ComboBoxItem>dfjsdfk1</ComboBoxItem>
+                        <ComboBoxItem>dfjsdfk2</ComboBoxItem>
+                        <ComboBoxItem>dfjsdfk3</ComboBoxItem>
+                    </ComboBox>
+
+                    <TextBlock Text="Менеджери" Foreground="White" Margin="0,0,0,0"></TextBlock>
+            <ComboBox Name="Combox2" Margin="0,0,0,5"></ComboBox>
+            
+            <TextBlock Text="Майстри" Foreground="White" Margin="0,0,0,0"></TextBlock>
+            <ComboBox Name="Combox3" Margin="0,0,0,5"></ComboBox>
+           
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Column="2" Margin="20,20,20,0">
+           
+
+            <TextBlock Text="Вартість послуги" Foreground="White" Margin="0,0,0,0"></TextBlock>
+            <TextBlock x:Name="CostService" Text="0" Foreground="White" Margin="0,0,0,0"></TextBlock>
+            <TextBlock Text="Вартість деталі" Foreground="White" Margin="0,0,0,0"></TextBlock>
+            <TextBlock x:Name="CostDet" Text="0" Foreground="White" Margin="0,0,0,0"></TextBlock>
+            <TextBlock Text="Вся вартість" Foreground="White" Margin="0,0,0,0"></TextBlock>
+            <TextBlock x:Name="allsum" Text="0" Foreground="White" Margin="0,0,0,0"></TextBlock>
+        </StackPanel>
+
+        <Button Grid.Column="1" Grid.Row="1" Margin="7" Content="Добавити інформацію" Click="Button_Click"></Button>
+
+    </StackPanel>
+    </ScrollViewer>
+</Grid>
+</Page>

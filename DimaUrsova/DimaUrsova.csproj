@@ -1,0 +1,147 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Pages\Pages_for_table\**" />
+    <EmbeddedResource Remove="Pages\Pages_for_table\**" />
+    <None Remove="Pages\Pages_for_table\**" />
+    <Page Remove="Pages\Pages_for_table\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="EFextend\Photos\555.png" />
+    <None Remove="EFextend\Photos\999.png" />
+    <None Remove="EFextend\Photos\icons8-выход-30.png" />
+    <None Remove="EFextend\Photos\icons8-выход-96 %281%29.png" />
+    <None Remove="EFextend\Photos\icons8-выход-96.png" />
+    <None Remove="EFextend\Photos\icons8-выход.gif" />
+    <None Remove="EFextend\Photos\icons8-группы-пользователей-64.png" />
+    <None Remove="EFextend\Photos\icons8-группы-пользователей-96 %281%29.png" />
+    <None Remove="EFextend\Photos\icons8-группы-пользователей-96.png" />
+    <None Remove="EFextend\Photos\icons8-заказ-30.png" />
+    <None Remove="EFextend\Photos\icons8-заказ-96 %281%29.png" />
+    <None Remove="EFextend\Photos\icons8-заказ-96.png" />
+    <None Remove="EFextend\Photos\icons8-поиск-128.png" />
+    <None Remove="EFextend\Photos\icons8-покупатель-64.png" />
+    <None Remove="EFextend\Photos\icons8-покупатель-96 %281%29.png" />
+    <None Remove="EFextend\Photos\icons8-покупатель-96.png" />
+    <None Remove="EFextend\Photos\icons8-склад-48.png" />
+    <None Remove="EFextend\Photos\icons8-склад-96 %281%29.png" />
+    <None Remove="EFextend\Photos\icons8-склад-96 %282%29.png" />
+    <None Remove="EFextend\Photos\icons8-склад-96.png" />
+    <None Remove="EFextend\Photos\image.png" />
+    <None Remove="image.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DarkNet" Version="2.2.0" />
+    <PackageReference Include="LiveCharts" Version="0.9.7" />
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="6.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.16">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="6.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.16">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="123.db">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="EFextend\Photos\555.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="EFextend\Photos\999.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="EFextend\Photos\icons8-выход-30.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="EFextend\Photos\icons8-выход-96 (1).png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="EFextend\Photos\icons8-выход-96.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="EFextend\Photos\icons8-выход.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="EFextend\Photos\icons8-группы-пользователей-64.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="EFextend\Photos\icons8-группы-пользователей-96 (1).png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="EFextend\Photos\icons8-группы-пользователей-96.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="EFextend\Photos\icons8-заказ-30.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="EFextend\Photos\icons8-заказ-96 (1).png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="EFextend\Photos\icons8-заказ-96.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="EFextend\Photos\icons8-поиск-128.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="EFextend\Photos\icons8-покупатель-64.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="EFextend\Photos\icons8-покупатель-96 (1).png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="EFextend\Photos\icons8-покупатель-96.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="EFextend\Photos\icons8-склад-48.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="EFextend\Photos\icons8-склад-96 (1).png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="EFextend\Photos\icons8-склад-96 (2).png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="EFextend\Photos\icons8-склад-96.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="EFextend\Photos\image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

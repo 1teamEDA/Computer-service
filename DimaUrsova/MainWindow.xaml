@@ -1,0 +1,16 @@
+﻿<Window 
+    x:Class="DimaUrsova.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DimaUrsova"
+       
+       mc:Ignorable="d" Title="Комп`ютерний сервіс"   MinHeight="450" MinWidth="1000" WindowStartupLocation="CenterScreen" Width="800" Height="450" Background="#262727" Icon="/EFextend/Photos/image.png"   >
+
+    <Grid>
+
+        <Frame x:Name="FrameMain" NavigationUIVisibility="Hidden" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
